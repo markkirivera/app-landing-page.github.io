@@ -1,0 +1,296 @@
+body {
+    padding-top: 6rem;
+}
+
+.navbar {
+    background-color: #6bb3c7f6 !important;
+}
+
+.navbar img {
+    width: 9rem;
+}
+
+.navbar .svg-inline--fa {
+    color: white;
+    padding-top: 1rem;
+}
+
+
+/* ----- Banner Section ----- */
+.banner {
+    max-width: 100%;
+    color: white;
+    padding: 0;
+}
+
+#col2 {
+    padding-top: 10rem;
+}
+
+.banner h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+}
+
+.banner-bg {
+    background: url('img/Images/Videoap_background_header-1920x1074.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner img {
+    width: 25rem;
+}
+
+.banner button {
+    border-radius: 25px;
+    width: 50%;
+    background-color: #26c6da;
+    border-color: #26c6da;
+}
+
+.banner button:hover {
+    background-color: #4dd0e1;
+    border-color: #4dd0e1;
+}
+
+
+
+/* Features */
+.features {
+    padding: 2rem 0;
+}
+
+.features .row {
+    padding: 1.2rem 0;
+}
+
+.features .svg-inline--fa {
+    font-size: 2em !important;
+    color: #26c6da;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Simple Section */
+.simple .row div:nth-child(1) {
+    padding-top: 4rem;
+}
+
+.simple .line {
+    width: 20%;
+    border: 1.5px solid #26c6da;
+}
+
+.simple img {
+    width: 20rem;
+}
+
+
+/* How It Works */
+/* Video Background */
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}
+
+.how .line {
+    width: 10%;
+    border: 1.5px solid #26c6da;
+}
+
+
+
+
+/* Brands */
+.brands {
+    width: 80%;
+    padding: 3rem 0;
+}
+
+
+
+/* Testimonials Section */
+.testimonials img {
+    width: 25rem;
+}
+
+.testimonials .line {
+    width: 20%;
+    border: 1.5px solid #26c6da;
+}
+
+.testimonials .row div:nth-child(2) {
+    padding-top: 7rem;
+}
+
+
+
+/* Contact Section */
+.contact {
+    width: 80%;
+}
+
+.contact .btn {
+    border-radius: 25px;
+    width: 40%;
+    background-color: #26c6da;
+    border-color: #26c6da;
+}
+
+.contact .btn:hover {
+    background-color: #4dd0e1;
+    border-color: #4dd0e1;
+}
+
+.contact .svg-inline--fa {
+    color: #26c6da !important;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.contact .svg-inline--fa:hover {
+    color: #4dd0e1 !important;
+}
+
+.callnow {
+    color: #26c6da;
+}
+
+
+
+
+
+/* ------ Media Queries ------ */
+
+/* Mobile S - 320px x 560px */
+@media (max-width: 320px) {
+    .simple img {
+        width: 15rem;
+    }
+    .testimonials img {
+        width: 18rem;
+    }
+}
+
+/* Mobile S - 320px x 560px */
+@media (max-width: 425px) {
+    .simple img {
+        width: 20rem;
+    }
+    .testimonials img {
+        width: 24rem;
+    }
+}
+
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .banner {
+        color: black;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .simple {
+        padding: 1rem;
+    }
+
+    .simple img {
+        width: 25rem;
+        margin-left: 2.5rem;
+    }
+
+    .testimonials img {
+        width: 30rem;
+    }
+
+}
+
+/* Full HD - 1024 */
+@media (max-width: 1024px) {
+    .simple img {
+        width: 28rem;
+    }
+    .testimonials img {
+        width: 26rem;
+    }
+}
+
+/* Full HD - 1440 */
+@media (max-width: 1440px) {
+    .simple img {
+        width: 28rem;
+    }
+    .testimonials img {
+        width: 30rem;
+    }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
